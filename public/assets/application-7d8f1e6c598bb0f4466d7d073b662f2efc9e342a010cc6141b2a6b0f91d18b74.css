@@ -1,0 +1,304 @@
+/* line 2, app/assets/stylesheets/employees.scss */
+.employee_index .new_employee {
+  text-align: right;
+  margin-right: 31px;
+}
+
+/* line 7, app/assets/stylesheets/employees.scss */
+.employee_index .btn {
+  border: 1px solid;
+  padding: 3px 5px;
+}
+
+/* line 12, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table {
+  height: fit-content;
+  width: 700px;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+
+/* line 18, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table thead {
+  line-height: 50px;
+}
+
+/* line 21, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table thead .department_th {
+  width: 90px;
+}
+
+/* line 26, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .name {
+  text-align: left;
+  width: 350px;
+  padding-left: 50px;
+}
+
+/* line 32, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .employee {
+  line-height: 30px;
+}
+
+/* line 35, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .employee .btn_th {
+  display: inline-block;
+}
+
+/* line 42, app/assets/stylesheets/employees.scss */
+.employee_form {
+  position: relative;
+  margin-top: 60px;
+}
+
+/* line 46, app/assets/stylesheets/employees.scss */
+.employee_form .form_group {
+  display: flex;
+  line-height: 2.4em;
+}
+
+/* line 50, app/assets/stylesheets/employees.scss */
+.employee_form .form_group label {
+  display: inline-block;
+  width: 120px;
+}
+
+/* line 55, app/assets/stylesheets/employees.scss */
+.employee_form .form_group input {
+  width: 150px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* line 61, app/assets/stylesheets/employees.scss */
+.employee_form .form_group input[type="checkbox"] {
+  margin: 12px 0 0 -227px;
+}
+
+/* line 65, app/assets/stylesheets/employees.scss */
+.employee_form .form_group select {
+  height: 29px;
+  width: 158px;
+  padding-left: 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+/* line 73, app/assets/stylesheets/employees.scss */
+.employee_form .form_group .checkbox_label {
+  width: fit-content;
+  margin-left: 30px;
+}
+
+/* line 79, app/assets/stylesheets/employees.scss */
+.employee_form input[type="submit"] {
+  position: absolute;
+  top: -38px;
+  right: 20px;
+  padding: 0px 22px;
+  background-color: white;
+  border: 1px solid;
+}
+/* line 1, app/assets/stylesheets/profiles.scss */
+.profile_space {
+  position: relative;
+  margin-top: 30px;
+}
+
+/* line 5, app/assets/stylesheets/profiles.scss */
+.profile_space .employee_index {
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* line 10, app/assets/stylesheets/profiles.scss */
+.profile_space .btn {
+  border: 1px solid;
+  padding: 3px 5px;
+}
+
+/* line 15, app/assets/stylesheets/profiles.scss */
+.profile_space .label {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+}
+
+/* line 21, app/assets/stylesheets/profiles.scss */
+.profile_space .row {
+  line-height: 2.4em;
+}
+
+/* line 24, app/assets/stylesheets/profiles.scss */
+.profile_space .row .profile_value {
+  width: 480px;
+  display: inline-block;
+  line-height: 1.5em;
+  padding-top: 45px;
+}
+
+/* line 32, app/assets/stylesheets/profiles.scss */
+.profile_space .form_group {
+  display: flex;
+}
+
+/* line 35, app/assets/stylesheets/profiles.scss */
+.profile_space .form_group textarea {
+  width: 480px;
+  height: 100px;
+  padding: 7px;
+  display: inline-block;
+  line-height: 1.5em;
+}
+
+/* line 44, app/assets/stylesheets/profiles.scss */
+.profile_space input[type="submit"] {
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  padding: 0px 22px;
+  background-color: white;
+  border: 1px solid;
+}
+/* line 5, app/assets/stylesheets/sessions.scss */
+.session {
+  margin: auto;
+}
+
+/* line 9, app/assets/stylesheets/sessions.scss */
+.form-group {
+  padding-bottom: 20px;
+}
+
+/* line 13, app/assets/stylesheets/sessions.scss */
+.form-label {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* line 18, app/assets/stylesheets/sessions.scss */
+.form-submit {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* line 23, app/assets/stylesheets/sessions.scss */
+input[type="text"] {
+  width: 300px;
+  height: 22px;
+}
+
+/* line 28, app/assets/stylesheets/sessions.scss */
+input[type="password"] {
+  width: 300px;
+  height: 22px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse:  collapse;
+}
+
+tr {
+  border: solid 1px;
+}
+
+.container {
+  height: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.row-center {
+  text-align: center;
+}
+
+#menu {
+  width: auto;
+  border: 1px solid;
+  font-size: 24px;
+  display: flex;
+}
+
+#menu ul {
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+#menu li {
+  margin: 0 30px 0 30px;
+  float: left;
+}
+
+#dropdown_menu {
+  display: none;
+}
+
+#dropdown_menu ul {
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+#dropdown_menu li {
+  margin: 0 30px 0 30px;
+  float: left;
+}
+
+#dropdown_menu.is-open {
+  display: flex;
+  margin: 0;
+  width: auto;
+  font-size: 24px;
+}
+
+.dropdown_items {
+  border: 1px solid;
+}
+
+.left_menu, .right_menu {
+  display: inline-block;
+}
+
+.left_menu {
+  margin-right: auto;
+}
+
+.right_menu {
+  margin-left: auto;
+}
+
+.dropdown__btn {
+  font-size: 24px;
+  background: none;
+  border: 0;
+}
+

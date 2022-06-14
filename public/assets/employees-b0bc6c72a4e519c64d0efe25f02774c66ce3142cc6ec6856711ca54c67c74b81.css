@@ -1,0 +1,101 @@
+/* line 2, app/assets/stylesheets/employees.scss */
+.employee_index .new_employee {
+  text-align: right;
+  margin-right: 31px;
+}
+
+/* line 7, app/assets/stylesheets/employees.scss */
+.employee_index .btn {
+  border: 1px solid;
+  padding: 3px 5px;
+}
+
+/* line 12, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table {
+  height: fit-content;
+  width: 700px;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+
+/* line 18, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table thead {
+  line-height: 50px;
+}
+
+/* line 21, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table thead .department_th {
+  width: 90px;
+}
+
+/* line 26, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .name {
+  text-align: left;
+  width: 350px;
+  padding-left: 50px;
+}
+
+/* line 32, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .employee {
+  line-height: 30px;
+}
+
+/* line 35, app/assets/stylesheets/employees.scss */
+.employee_index .employee_table .employee .btn_th {
+  display: inline-block;
+}
+
+/* line 42, app/assets/stylesheets/employees.scss */
+.employee_form {
+  position: relative;
+  margin-top: 60px;
+}
+
+/* line 46, app/assets/stylesheets/employees.scss */
+.employee_form .form_group {
+  display: flex;
+  line-height: 2.4em;
+}
+
+/* line 50, app/assets/stylesheets/employees.scss */
+.employee_form .form_group label {
+  display: inline-block;
+  width: 120px;
+}
+
+/* line 55, app/assets/stylesheets/employees.scss */
+.employee_form .form_group input {
+  width: 150px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* line 61, app/assets/stylesheets/employees.scss */
+.employee_form .form_group input[type="checkbox"] {
+  margin: 12px 0 0 -227px;
+}
+
+/* line 65, app/assets/stylesheets/employees.scss */
+.employee_form .form_group select {
+  height: 29px;
+  width: 158px;
+  padding-left: 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+/* line 73, app/assets/stylesheets/employees.scss */
+.employee_form .form_group .checkbox_label {
+  width: fit-content;
+  margin-left: 30px;
+}
+
+/* line 79, app/assets/stylesheets/employees.scss */
+.employee_form input[type="submit"] {
+  position: absolute;
+  top: -38px;
+  right: 20px;
+  padding: 0px 22px;
+  background-color: white;
+  border: 1px solid;
+}
