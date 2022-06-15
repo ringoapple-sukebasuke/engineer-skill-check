@@ -1,0 +1,21 @@
+<div class="employee_index">
+  <p class="new_employee"><%= link_to '新規追加', new_article_path, class: 'btn' %></p>
+
+  <table class="employee_table">
+    <thead>
+      <tr>
+        <th class="name">タイトル</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @articles.each do |article| %>
+        <tr class="employee">
+        <th><%= link_to article.title, article_path(article.id) %></th>
+        <th><%= link_to article.created_at %></th>
+        <th class="btn_th"><%= link_to '編集', edit_article_path(article.id), class: 'btn' %></th>
+        <th class="btn_th"><%= link_to '削除', article_path(article.id), method: :delete, class: 'btn' %></th>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
