@@ -32,8 +32,8 @@
     </div>
 
     <div class="form_group">
-      <%= f.label :e_mail %>
-      <%= f.text_field :e_mail %>
+      <%= f.label :email, "メールアドレス" %>
+      <%= f.text_field :email %>
     </div>
 
     <div class="form_group">
@@ -54,6 +54,11 @@
     <div class="form_group">
       <%= f.label :employee_info_manage_auth, class: 'checkbox_label' %>
       <%= f.check_box :employee_info_manage_auth, :as => :boolean %>
+    </div>
+
+    <div class="form_group">
+      <%= f.label :news_posting_auth, "お知らせ投稿権限", class: 'checkbox_label' %>
+      <%= f.check_box :news_posting_auth, :as => :boolean %>
     </div>
 
     <%= f.submit '保存' %>
