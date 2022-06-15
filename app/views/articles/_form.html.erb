@@ -1,0 +1,22 @@
+<div class="article_form">
+  <% if article.errors.present? %>
+    <ul>
+      <% article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= form_with model: article, local: true do |f| %>
+    <div class="form_group">
+      <%= f.label :title, "タイトル" %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="form_group">
+      <%= f.label :text, "内容" %>
+      <%= f.text_field :text %>
+    </div>
+    
+    <%= f.submit '保存' %>
+  <% end %>
+</div>
