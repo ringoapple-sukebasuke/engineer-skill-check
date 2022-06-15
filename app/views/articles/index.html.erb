@@ -5,15 +5,16 @@
     <thead>
       <tr>
         <th class="name">タイトル</th>
+        <th><%= sort_order "created_at", "公開日" %></th>
       </tr>
     </thead>
     <tbody>
       <% @articles.each do |article| %>
         <tr class="employee">
-        <th><%= link_to article.title, article_path(article.id) %></th>
-        <th><%= link_to article.created_at %></th>
-        <th class="btn_th"><%= link_to '編集', edit_article_path(article.id), class: 'btn' %></th>
-        <th class="btn_th"><%= link_to '削除', article_path(article.id), method: :delete, class: 'btn' %></th>
+          <th><%= link_to article.title, article_path(article.id) %></th>
+          <th class="department_th"><%= article.created_at %></th>
+          <th class="btn_th"><%= link_to '編集', edit_article_path(article.id), class: 'btn' %></th>
+          <th class="btn_th"><%= link_to '削除', article_path(article.id), method: :delete, class: 'btn' %></th>
         </tr>
       <% end %>
     </tbody>
