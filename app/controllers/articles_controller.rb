@@ -61,7 +61,7 @@ class ArticlesController < ApplicationController
   end
 
   def ensure_correct_user
-    @article=Article.find(params[:id])
+    @article = Article.find(params[:id])
     if @article.Author != current_user.id
       redirect_to articles_path, notice: "権限がありません"
     end
