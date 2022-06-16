@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  
+  before_action :has_news_posting_auth?, only:[:edit,:update,:destroy]
+
   def index
     @articles = Article.order("#{sort_column} #{sort_direction}")
   end
@@ -11,7 +12,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to articles_path
+      redirect_to articles_path, notice: "投稿が完了しました"
     else
       render new_article_path
     end
@@ -29,5 +30,9 @@ class ArticlesController < ApplicationController
 
   def sort_direction
     params[:direction] ? params[:direction] : 'asc'
+  end
+
+  def has_news_posting_auth?
+    redirect_to articles_path unless current_user.news_posting_auth
   end
 end
