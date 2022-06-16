@@ -1,0 +1,10 @@
+<div class="article_form">
+  <p class="new_employee"><%= link_to '一覧に戻る', articles_path, class: 'btn' %></p>
+  <div class="form_group">
+    <p>タイトル<%= @article.title %></p>
+  </div>
+
+  <div class="form_group_content">
+    <%= @article.content %>
+   </div>
+</div>
