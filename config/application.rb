@@ -36,5 +36,6 @@ module NewsAndEmployeeIntroduction
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.active_storage.draw_routes = false
+    config.time_zone = 'Tokyo'
   end
 end
