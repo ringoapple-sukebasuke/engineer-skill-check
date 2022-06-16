@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :has_news_posting_auth?, only:[:edit,:update,:destroy]
+  before_action :has_news_posting_auth?, only:[:new, :edit,:update,:destroy]
 
   def index
     @articles = Article.order("#{sort_column} #{sort_direction}")
