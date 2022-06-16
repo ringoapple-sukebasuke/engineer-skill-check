@@ -18,7 +18,7 @@
         <tr class="employee">
           <th><%= link_to article.title, article_path(article.id) %></th>
           <th class="department_th"><%= article.created_at %></th>
-          <% if current_user.news_posting_auth %>
+          <% if current_user.id == article.Author %>
             <th class="btn_th"><%= link_to '編集', edit_article_path(article.id), class: 'btn' %></th>
             <th class="btn_th"><%= link_to '削除', article_path(article.id), method: :delete, data: { confirm: "タイトル「#{article.title} 」を削除します。よろしいですか？" },class: 'btn' %></th>
           <% end %>

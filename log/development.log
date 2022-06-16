@@ -1,0 +1,732 @@
+Started GET "/articles/new" for 172.23.0.1 at 2022-06-16 08:11:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  [1m[36mEmployee Load (4.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.5ms | Allocations: 559)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 662)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 20.8ms | Allocations: 1386)
+  Rendered layout layouts/application.html.erb (Duration: 158.9ms | Allocations: 5153)
+Completed 200 OK in 240ms (Views: 164.0ms | ActiveRecord: 4.4ms | Allocations: 17547)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:11:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aaa", "content"=>"aaaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (28.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 28.8ms | Allocations: 1545)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'Author' for Article.):
+  
+app/controllers/articles_controller.rb:14:in `create'
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:12:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aaa", "content"=>"aaaa"}, "commit"=>"保存"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (3.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.3ms | Allocations: 1705)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 26.5ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 6248)
+Completed 200 OK in 242ms (Views: 98.4ms | ActiveRecord: 33.5ms | Allocations: 21538)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:12:40 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 5.7ms | Allocations: 1384)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1474)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 22.3ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 107.1ms | Allocations: 5675)
+Completed 200 OK in 123ms (Views: 111.2ms | ActiveRecord: 2.2ms | Allocations: 7468)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:12:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.7ms | Allocations: 1382)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1472)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 22.7ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 101.9ms | Allocations: 5662)
+Completed 200 OK in 116ms (Views: 105.1ms | ActiveRecord: 2.8ms | Allocations: 7284)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:13:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (3.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.6ms | Allocations: 927)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 25.8ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 87.9ms | Allocations: 5458)
+Completed 200 OK in 226ms (Views: 93.2ms | ActiveRecord: 33.4ms | Allocations: 20663)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:13:39 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (3.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.8ms | Allocations: 645)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 23.1ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 102.2ms | Allocations: 4924)
+Completed 200 OK in 117ms (Views: 105.6ms | ActiveRecord: 3.0ms | Allocations: 6698)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:13:40 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.9ms | Allocations: 645)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 66.0ms | Allocations: 1359)
+  Rendered layout layouts/application.html.erb (Duration: 151.8ms | Allocations: 4940)
+Completed 200 OK in 166ms (Views: 155.1ms | ActiveRecord: 2.2ms | Allocations: 6546)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:14:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:47: syntax error, unexpected ':', expecting ')'
+...rmit(:title, :content, :author: @current_user.id)
+...                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+...ent, :author: @current_user.id)
+...                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/articles_controller.rb:47: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ':', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:14:46 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:47: syntax error, unexpected '=', expecting ')'
+...mit(:title, :content, :author = @current_user.id)
+...                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+...nt, :author = @current_user.id)
+...                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/articles_controller.rb:47: syntax error, unexpected '=', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:47: syntax error, unexpected '=', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:47: syntax error, unexpected '=', expecting ')'
+app/controllers/articles_controller.rb:47: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:61: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:15:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (4.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.6ms | Allocations: 895)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 25.7ms | Allocations: 1381)
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 5440)
+Completed 200 OK in 252ms (Views: 106.4ms | ActiveRecord: 42.4ms | Allocations: 20685)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:15:13 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (4.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.2ms | Allocations: 645)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 27.6ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 128.7ms | Allocations: 4930)
+Completed 200 OK in 151ms (Views: 135.7ms | ActiveRecord: 4.3ms | Allocations: 6699)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:15:14 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (3.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.3ms | Allocations: 645)
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 51.5ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 135.8ms | Allocations: 4924)
+Completed 200 OK in 151ms (Views: 139.9ms | ActiveRecord: 3.6ms | Allocations: 6524)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:15:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mEmployee Load (3.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (3.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1944)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 29.6ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 122.7ms | Allocations: 6222)
+Completed 200 OK in 136ms (Views: 122.6ms | ActiveRecord: 6.4ms | Allocations: 7369)
+
+
+Started GET "/articles/new" for 172.23.0.1 at 2022-06-16 08:15:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mEmployee Load (31.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.8ms | Allocations: 340)
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 430)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 24.3ms | Allocations: 1361)
+  Rendered layout layouts/application.html.erb (Duration: 106.0ms | Allocations: 4697)
+Completed 200 OK in 147ms (Views: 109.3ms | ActiveRecord: 31.7ms | Allocations: 5728)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:15:20 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaaaaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.0ms | Allocations: 645)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 61.7ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 144.6ms | Allocations: 4924)
+Completed 200 OK in 161ms (Views: 149.9ms | ActiveRecord: 2.1ms | Allocations: 6522)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:16:37 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaaaaa"}, "commit"=>"保存"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (4.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 26.3ms | Allocations: 11599)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/articles_controller.rb:46:in `article_params'
+app/controllers/articles_controller.rb:13:in `create'
+Started GET "/" for 172.23.0.1 at 2022-06-16 08:16:51 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (3.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (2.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."deleted_at" IS NULL ORDER BY number asc[0m
+  ↳ app/views/employees/index.html.erb:19
+  [1m[36mProfile Load (3.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 1]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mDepartment Load (3.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 2]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.0ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 3]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.0ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 4]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  Rendered employees/index.html.erb within layouts/application (Duration: 108.7ms | Allocations: 14761)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 52.0ms | Allocations: 1370)
+  Rendered layout layouts/application.html.erb (Duration: 233.6ms | Allocations: 19199)
+Completed 200 OK in 253ms (Views: 207.5ms | ActiveRecord: 34.1ms | Allocations: 20869)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:16:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mEmployee Load (2.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 29.6ms | Allocations: 4502)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 36.7ms | Allocations: 1370)
+  Rendered layout layouts/application.html.erb (Duration: 144.2ms | Allocations: 9025)
+Completed 200 OK in 160ms (Views: 136.6ms | ActiveRecord: 15.2ms | Allocations: 10503)
+
+
+Started GET "/articles/new" for 172.23.0.1 at 2022-06-16 08:16:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mEmployee Load (2.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.8ms | Allocations: 474)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 23.1ms | Allocations: 1361)
+  Rendered layout layouts/application.html.erb (Duration: 104.9ms | Allocations: 4834)
+Completed 200 OK in 116ms (Views: 107.9ms | ActiveRecord: 2.1ms | Allocations: 5952)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:16:57 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.5ms | Allocations: 1196)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/articles_controller.rb:46:in `article_params'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:19:08 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+      title: params[:title}
+                          ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+      content: params[:content}
+                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+    )
+    ^
+):
+  
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+Started GET "/" for 172.23.0.1 at 2022-06-16 08:20:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EmployeesController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (2.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (2.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."deleted_at" IS NULL ORDER BY number asc[0m
+  ↳ app/views/employees/index.html.erb:19
+  [1m[36mProfile Load (1.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 1]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mDepartment Load (2.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.0ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 2]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (12.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 3]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (1.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 4]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  Rendered employees/index.html.erb within layouts/application (Duration: 124.4ms | Allocations: 14671)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 32.6ms | Allocations: 1371)
+  Rendered layout layouts/application.html.erb (Duration: 235.2ms | Allocations: 19110)
+Completed 200 OK in 296ms (Views: 201.7ms | ActiveRecord: 52.7ms | Allocations: 30425)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:20:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+      title: params[:title}
+                          ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+      content: params[:content}
+                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+    )
+    ^
+):
+  
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+Started GET "/" for 172.23.0.1 at 2022-06-16 08:20:04 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (3.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (2.9ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."deleted_at" IS NULL ORDER BY number asc[0m
+  ↳ app/views/employees/index.html.erb:19
+  [1m[36mProfile Load (2.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 1]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mDepartment Load (2.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 2]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (1.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 3]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (1.8ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 4]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  Rendered employees/index.html.erb within layouts/application (Duration: 71.4ms | Allocations: 7960)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 24.7ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 172.9ms | Allocations: 12250)
+Completed 200 OK in 186ms (Views: 162.1ms | ActiveRecord: 16.7ms | Allocations: 13426)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:20:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+      title: params[:title}
+                          ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+      content: params[:content}
+                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+    )
+    ^
+):
+  
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+Started GET "/" for 172.23.0.1 at 2022-06-16 08:20:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (3.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (3.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."deleted_at" IS NULL ORDER BY number asc[0m
+  ↳ app/views/employees/index.html.erb:19
+  [1m[36mProfile Load (4.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 1]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mDepartment Load (2.8ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (2.9ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 2]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (4.6ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 3]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  [1m[36mProfile Load (3.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."employee_id" = ? AND "profiles"."deleted_at" IS NULL[0m  [["employee_id", 4]]
+  ↳ app/views/employees/index.html.erb:21
+  [1m[36mCACHE Department Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/employees/index.html.erb:31
+  Rendered employees/index.html.erb within layouts/application (Duration: 87.3ms | Allocations: 7941)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 30.6ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 241.4ms | Allocations: 12231)
+Completed 200 OK in 257ms (Views: 223.7ms | ActiveRecord: 25.5ms | Allocations: 13361)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:20:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/news_and_employee_introduction/app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+      title: params[:title}
+                          ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+      content: params[:content}
+                              ^
+/news_and_employee_introduction/app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+    )
+    ^
+):
+  
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/articles_controller.rb:14: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:15: syntax error, unexpected '}', expecting ']'
+app/controllers/articles_controller.rb:17: syntax error, unexpected ')', expecting `end'
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:21:21 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (2.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 4838)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 53.6ms | Allocations: 1374)
+  Rendered layout layouts/application.html.erb (Duration: 142.6ms | Allocations: 9344)
+Completed 200 OK in 221ms (Views: 134.8ms | ActiveRecord: 27.7ms | Allocations: 21184)
+
+
+Started GET "/articles/new" for 172.23.0.1 at 2022-06-16 08:21:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 13.6ms | Allocations: 475)
+  Rendered articles/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 568)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 30.9ms | Allocations: 1361)
+  Rendered layout layouts/application.html.erb (Duration: 126.5ms | Allocations: 4847)
+Completed 200 OK in 139ms (Views: 130.4ms | ActiveRecord: 2.2ms | Allocations: 5968)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:21:29 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"a", "content"=>"a"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.5ms | Allocations: 691)
+  Rendered articles/new.html.erb within layouts/application (Duration: 27.1ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 39.0ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 155.0ms | Allocations: 4970)
+Completed 200 OK in 172ms (Views: 159.6ms | ActiveRecord: 2.3ms | Allocations: 6731)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:24:08 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mEmployee Load (3.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 4839)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 28.9ms | Allocations: 1374)
+  Rendered layout layouts/application.html.erb (Duration: 123.1ms | Allocations: 9333)
+Completed 200 OK in 222ms (Views: 108.6ms | ActiveRecord: 37.6ms | Allocations: 21130)
+
+
+Started GET "/articles/new" for 172.23.0.1 at 2022-06-16 08:24:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  [1m[36mEmployee Load (2.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.5ms | Allocations: 474)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 567)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 27.4ms | Allocations: 1361)
+  Rendered layout layouts/application.html.erb (Duration: 110.2ms | Allocations: 4846)
+Completed 200 OK in 122ms (Views: 113.4ms | ActiveRecord: 2.3ms | Allocations: 5966)
+
+
+Started POST "/articles" for 172.23.0.1 at 2022-06-16 08:24:13 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"aa", "content"=>"aaa"}, "commit"=>"保存"}
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:14:in `create'
+  [1m[36mArticle Create (41.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at", "Author") VALUES (?, ?, ?, ?, ?)[0m  [["title", "aa"], ["content", "aaa"], ["created_at", "2022-06-16 08:24:13.465735"], ["updated_at", "2022-06-16 08:24:13.465735"], ["Author", 1]]
+  ↳ app/controllers/articles_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:14:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 82ms (ActiveRecord: 52.3ms | Allocations: 5219)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:24:13 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mEmployee Load (4.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (3.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1610)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 21.1ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 115.5ms | Allocations: 5900)
+Completed 200 OK in 130ms (Views: 116.0ms | ActiveRecord: 7.1ms | Allocations: 6974)
+
+
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:29:40 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mEmployee Load (2.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2930)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3004)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 4.4ms | Allocations: 4839)
+
+
+  
+ActionView::Template::Error (undefined method `Author' for nil:NilClass):
+    18:         <tr class="employee">
+    19:           <th><%= link_to article.title, article_path(article.id) %></th>
+    20:           <th class="department_th"><%= article.created_at %></th>
+    21:           <% if current_user.id == @article.Author %>
+    22:             <th class="btn_th"><%= link_to '編集', edit_article_path(article.id), class: 'btn' %></th>
+    23:             <th class="btn_th"><%= link_to '削除', article_path(article.id), method: :delete, data: { confirm: "タイトル「#{article.title} 」を削除します。よろしいですか？" },class: 'btn' %></th>
+    24:           <% end %>
+  
+app/views/articles/index.html.erb:21
+app/views/articles/index.html.erb:17
+Started GET "/articles" for 172.23.0.1 at 2022-06-16 08:30:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  [1m[36mEmployee Load (3.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (5.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY created_at desc[0m
+  ↳ app/views/articles/index.html.erb:17
+  Rendered articles/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 1853)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 58.7ms | Allocations: 1557)
+  Rendered layout layouts/application.html.erb (Duration: 167.2ms | Allocations: 6906)
+Completed 200 OK in 183ms (Views: 166.8ms | ActiveRecord: 8.4ms | Allocations: 8847)
+
+
