@@ -14,12 +14,21 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to articles_path, notice: "投稿が完了しました"
     else
-      render new_article_path
+      render "new"
     end
   end
 
   def edit
     @article = Article.find(params[:id])
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      redirect_to articles_path, notice: "「#{@article.title} 」を更新しました。"
+    else
+      render "edit"
+    end
   end
 
   private
