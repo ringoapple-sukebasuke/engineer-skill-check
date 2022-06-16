@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to articles_path, notice: "投稿が完了しました"
     else
-      render "new"
+      render :new
     end
   end
 
@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to articles_path, notice: "「#{@article.title} 」を更新しました。"
     else
-      render "edit"
+      render :edit
     end
   end
 
