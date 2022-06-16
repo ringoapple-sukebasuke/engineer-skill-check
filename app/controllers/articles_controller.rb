@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :has_news_posting_auth?, only:[:new, :edit,:update,:destroy]
+  before_action :ensure_correct_user, only:[:edit,:update,:destroy]
 
   def index
     @articles = Article.order("#{sort_column} #{sort_direction}")
@@ -58,4 +59,12 @@ class ArticlesController < ApplicationController
   def has_news_posting_auth?
     redirect_to articles_path unless current_user.news_posting_auth
   end
+
+  def ensure_correct_user
+    @article=Article.find_by(id: params[:id])
+    if @article.Author != current_user.id
+      redirect_to articles_path, notice: "権限がありません"
+    end
+  end
+ 
 end
