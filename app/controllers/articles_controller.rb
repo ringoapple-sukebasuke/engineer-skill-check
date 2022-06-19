@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
-  before_action :has_news_posting_auth?, only:[:new, :edit,:update,:destroy]
-  before_action :ensure_correct_user, only:[:edit,:update,:destroy]
+  before_action :has_news_posting_auth?, only: %i[new edit update destroy]
+  before_action :ensure_correct_user, only: %i[edit update destroy]
 
   def index
     @articles = Article.order("#{sort_column} #{sort_direction}")
@@ -9,11 +9,11 @@ class ArticlesController < ApplicationController
   def new
     @article = Article.new
   end
-  
+
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to articles_path, notice: "投稿が完了しました"
+      redirect_to articles_path, notice: '投稿が完了しました'
     else
       render :new
     end
@@ -49,11 +49,11 @@ class ArticlesController < ApplicationController
   end
 
   def sort_column
-    params[:sort] ? params[:sort] : 'created_at'
+    params[:sort] || 'created_at'
   end
 
   def sort_direction
-    params[:direction] ? params[:direction] : 'desc'
+    params[:direction] || 'desc'
   end
 
   def has_news_posting_auth?
@@ -62,9 +62,6 @@ class ArticlesController < ApplicationController
 
   def ensure_correct_user
     @article = Article.find(params[:id])
-    if @article.Author != current_user.id
-      redirect_to articles_path, notice: "権限がありません"
-    end
+    redirect_to articles_path, notice: '権限がありません' if @article.Author != current_user.id
   end
- 
 end

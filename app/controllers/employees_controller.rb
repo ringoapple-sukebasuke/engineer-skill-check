@@ -1,6 +1,6 @@
 class EmployeesController < ApplicationController
-  before_action :set_employee, only: %i(edit update destroy)
-  before_action :set_form_option, only: %i(new create edit update)
+  before_action :set_employee, only: %i[edit update destroy]
+  before_action :set_form_option, only: %i[new create edit update]
 
   def index
     @employees = Employee.active.order("#{sort_column} #{sort_direction}")
@@ -19,8 +19,7 @@ class EmployeesController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @employee.update(employee_params)
@@ -32,7 +31,7 @@ class EmployeesController < ApplicationController
 
   def destroy
     ActiveRecord::Base.transaction do
-      now = Time.now
+      now = Time.zone.now
       @employee.update_column(:deleted_at, now)
       @employee.profiles.active.first.update_column(:deleted_at, now) if @employee.profiles.active.present?
     end
@@ -43,11 +42,12 @@ class EmployeesController < ApplicationController
   private
 
   def employee_params
-    params.require(:employee).permit(:number, :last_name, :first_name, :account, :password, :email, :date_of_joining, :department_id, :office_id, :employee_info_manage_auth, :news_posting_auth)
+    params.require(:employee).permit(:number, :last_name, :first_name, :account, :password, :email, :date_of_joining,
+                                     :department_id, :office_id, :employee_info_manage_auth, :news_posting_auth)
   end
 
   def set_employee
-    @employee = Employee.find(params["id"])
+    @employee = Employee.find(params['id'])
   end
 
   def set_form_option
@@ -56,11 +56,10 @@ class EmployeesController < ApplicationController
   end
 
   def sort_column
-    params[:sort] ? params[:sort] : 'number'
+    params[:sort] || 'number'
   end
 
   def sort_direction
-    params[:direction] ? params[:direction] : 'asc'
+    params[:direction] || 'asc'
   end
-
 end
