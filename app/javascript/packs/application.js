@@ -11,3 +11,6 @@ import 'jquery'
 
 Rails.start()
 ActiveStorage.start()
+
+import "bootstrap";
+import "../stylesheets/application.scss";
